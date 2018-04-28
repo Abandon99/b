@@ -918,14 +918,19 @@ establishment and business environment incubation.
     <script>
         ///图片转
 
+
         var windowWidth = window.screen.width;
+
+        console.log(windowWidth)
+
 
 
         if (windowWidth > 1200){
-            $("#img1").css({
-                transform:'none'
-            })
+            // $("#img1").css({
+            //     transform:'none'
+            // })
         }else {
+            console.log('>1200')
             var ele ;
 
             //自定义函数

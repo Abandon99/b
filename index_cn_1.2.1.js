@@ -27,7 +27,7 @@ $(document).ready(function () {
             $(this).attr('src',src)
         });
         $("#img1").css({
-            transform:'none'
+            // transform:'none'
         })
     }
 
