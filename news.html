@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bw2w</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_1.2.1.css">
+    <link rel="stylesheet" href="css/index_pc_1.2.1.css">
+
+    <link rel="stylesheet" href="css/news_1.2.1.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <img class="img-menu" src= "img/nav-icon@2x.png" alt="">                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a>行业背景</a></li>
+                <li><a>解决方案</a></li>
+                <li><a>发展历程</a></li>
+                <li><a>Token发行与分配</a></li>
+                <li><a>Racecoin分配方案</a></li>
+                <li><a>新闻动态</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main">
+
+    <!--<img class="img2" src="img/yuan.png" alt="">-->
+
+    <div class="news-bx">
+        <div class="news-title">Bw2w与Ulord达成深度战略合作伙伴关系</div>
+        <div class="new-banner"><img src="img/wechatIMG5.jpeg" alt=""></div>
+        <div class="news-content">
+
+        </div>
+    </div>
+
+
+    <div style="background: black">
+        <footer style="background: black" id="flow">
+            <div class="foot-top">
+                <div>主页</div>
+                <div>白皮书</div>
+                <div>Bw2w社区(敬请期待)</div>
+            </div>
+            <div class="foot-bottom">
+                <div>©2017-2018</div>
+                <div>联系我们：<a style="color: #c3c3c3;text-decoration:underline" href="support@bw2w.com">support@bw2w.com</a></div>
+            </div>
+
+        </footer>
+    </div>
+
+
+</div>
+
+<script>
+    iniitNewsContent();
+    initNavEvent();
+
+    function initNavEvent() {
+
+        $('.nav.navbar-nav').on('click',function (e) {
+
+            var id;
+            var html = e.target.innerHTML;
+
+            if (html === '行业背景') id = '#background';
+            if (html === '解决方案') id = '#solve';
+            if (html === '发展历程') id = '#course';
+            if (html === 'Token发行与分配')   id = '#token';
+            if (html === 'Racecoin分配方案')   id = '#racecoin';
+            if (html === '新闻动态') id = '#news';
+            if (html === '敬请期待') id = '#video';
+            if (html === '联系方式') id = '#flow';
+
+//            var  top = $(id).offset().top - 200;
+            window.location.href = 'index.html?id='+id;
+
+//
+        });
+
+        $('.foot-top').on('click',function (e) {
+            var html = e.target.innerHTML;
+            if (html === '主页') window.location.href = 'index_cn.html';
+            if (html === '白皮书') window.location = "doc/paper_zh.pdf";
+
+        })
+    }
+
+    function iniitNewsContent() {
+        var news=  [
+            {
+                imgURl:'img/nav-icon@2x.png',
+                content:[
+                    'Bw2w团队与Ulord团队展开深度合作，助力区块链技术应用落地，双方将在体育赛事直播、竞猜、问答等方面探讨合作事宜。',
+                    'Bw2w平台旨在围绕体育，搭建一个涵盖社交、竞猜、直播和电商四大业务板块的去中心化线上体育大生态。Bw2w融合了区块链、云计算、大数据、人工智能和物联网等前沿科技，为平台独立开展公平公开的赛亊竞猜活劢，拓展异地赛亊活动并为用户提供个性化服务提供支持。',
+                    'FAST4WARD赛事入驻Bw2w平台，将带来大量初始用户，随着直播、竞猜、社交功能同步展开，结合体育周边商城的发展，用户粘性也逐渐增强。随着平台后期接入更多的体育赛事和项目，更多的用户入驻平台，在粉丝效应、网红经济的发展模式下，平台未来十分可期。',
+                    'FAST4WARD是中国汽车摩托车运动联合会一级赛事，也是国内唯一的直线竞速合法锦标赛事，拥有超过70万高净值粉丝，平均单场赛事新媒体曝光量达到2000万以上，基于赛事的直播资源十分丰富。',
+                    'Ulord 是一条点对点的价值传递公链（http://ulord.one/），通过搭建区块链底层架构和数字资源分发协议，支持第三方开发商在其开源协议之上构建自己的应用程序，与众多行业合作伙伴一起形成区块链技术与应用的完整生态。基于 Ulord 创建的各种规则和协议，嫁接包括文字、图片、音乐、视频、软件等在内的各类数字资源应用场景，为信息创造者与消费者提供直接的对接平台。'
+                ]
+            },
+            {
+                imgURl:'img/nav-icon@2x.png',
+                content:[
+                    'Bw2w团队与Ulord团队展开深度合作，助力区块链技术应用落地，双方将在体育赛事直播、竞猜、问答等方面探讨合作事宜。',
+                    'Bw2w平台旨在围绕体育，搭建一个涵盖社交、竞猜、直播和电商四大业务板块的去中心化线上体育大生态。Bw2w融合了区块链、云计算、大数据、人工智能和物联网等前沿科技，为平台独立开展公平公开的赛亊竞猜活劢，拓展异地赛亊活动并为用户提供个性化服务提供支持。',
+                    'FAST4WARD赛事入驻Bw2w平台，将带来大量初始用户，随着直播、竞猜、社交功能同步展开，结合体育周边商城的发展，用户粘性也逐渐增强。随着平台后期接入更多的体育赛事和项目，更多的用户入驻平台，在粉丝效应、网红经济的发展模式下，平台未来十分可期。',
+                    'FAST4WARD是中国汽车摩托车运动联合会一级赛事，也是国内唯一的直线竞速合法锦标赛事，拥有超过70万高净值粉丝，平均单场赛事新媒体曝光量达到2000万以上，基于赛事的直播资源十分丰富。',
+                    'Ulord 是一条点对点的价值传递公链（http://ulord.one/），通过搭建区块链底层架构和数字资源分发协议，支持第三方开发商在其开源协议之上构建自己的应用程序，与众多行业合作伙伴一起形成区块链技术与应用的完整生态。基于 Ulord 创建的各种规则和协议，嫁接包括文字、图片、音乐、视频、软件等在内的各类数字资源应用场景，为信息创造者与消费者提供直接的对接平台。'
+                ]
+            },
+            {
+                imgURl:'img/nav-icon@2x.png',
+                content:[
+                    'Bw2w团队与Ulord团队展开深度合作，助力区块链技术应用落地，双方将在体育赛事直播、竞猜、问答等方面探讨合作事宜。',
+                    'Bw2w平台旨在围绕体育，搭建一个涵盖社交、竞猜、直播和电商四大业务板块的去中心化线上体育大生态。Bw2w融合了区块链、云计算、大数据、人工智能和物联网等前沿科技，为平台独立开展公平公开的赛亊竞猜活劢，拓展异地赛亊活动并为用户提供个性化服务提供支持。',
+                    'FAST4WARD赛事入驻Bw2w平台，将带来大量初始用户，随着直播、竞猜、社交功能同步展开，结合体育周边商城的发展，用户粘性也逐渐增强。随着平台后期接入更多的体育赛事和项目，更多的用户入驻平台，在粉丝效应、网红经济的发展模式下，平台未来十分可期。',
+                    'FAST4WARD是中国汽车摩托车运动联合会一级赛事，也是国内唯一的直线竞速合法锦标赛事，拥有超过70万高净值粉丝，平均单场赛事新媒体曝光量达到2000万以上，基于赛事的直播资源十分丰富。',
+                    'Ulord 是一条点对点的价值传递公链（http://ulord.one/），通过搭建区块链底层架构和数字资源分发协议，支持第三方开发商在其开源协议之上构建自己的应用程序，与众多行业合作伙伴一起形成区块链技术与应用的完整生态。基于 Ulord 创建的各种规则和协议，嫁接包括文字、图片、音乐、视频、软件等在内的各类数字资源应用场景，为信息创造者与消费者提供直接的对接平台。'
+                ]
+            },
+            {
+                imgURl:'img/nav-icon@2x.png',
+                content:[
+                    'Bw2w团队与Ulord团队展开深度合作，助力区块链技术应用落地，双方将在体育赛事直播、竞猜、问答等方面探讨合作事宜。',
+                    'Bw2w平台旨在围绕体育，搭建一个涵盖社交、竞猜、直播和电商四大业务板块的去中心化线上体育大生态。Bw2w融合了区块链、云计算、大数据、人工智能和物联网等前沿科技，为平台独立开展公平公开的赛亊竞猜活劢，拓展异地赛亊活动并为用户提供个性化服务提供支持。',
+                    'FAST4WARD赛事入驻Bw2w平台，将带来大量初始用户，随着直播、竞猜、社交功能同步展开，结合体育周边商城的发展，用户粘性也逐渐增强。随着平台后期接入更多的体育赛事和项目，更多的用户入驻平台，在粉丝效应、网红经济的发展模式下，平台未来十分可期。',
+                    'FAST4WARD是中国汽车摩托车运动联合会一级赛事，也是国内唯一的直线竞速合法锦标赛事，拥有超过70万高净值粉丝，平均单场赛事新媒体曝光量达到2000万以上，基于赛事的直播资源十分丰富。',
+                    'Ulord 是一条点对点的价值传递公链（http://ulord.one/），通过搭建区块链底层架构和数字资源分发协议，支持第三方开发商在其开源协议之上构建自己的应用程序，与众多行业合作伙伴一起形成区块链技术与应用的完整生态。基于 Ulord 创建的各种规则和协议，嫁接包括文字、图片、音乐、视频、软件等在内的各类数字资源应用场景，为信息创造者与消费者提供直接的对接平台。'
+                ]
+            },
+            {
+                imgURl:'img/nav-icon@2x.png',
+                content:[
+                    'Bw2w团队与Ulord团队展开深度合作，助力区块链技术应用落地，双方将在体育赛事直播、竞猜、问答等方面探讨合作事宜。',
+                    'Bw2w平台旨在围绕体育，搭建一个涵盖社交、竞猜、直播和电商四大业务板块的去中心化线上体育大生态。Bw2w融合了区块链、云计算、大数据、人工智能和物联网等前沿科技，为平台独立开展公平公开的赛亊竞猜活劢，拓展异地赛亊活动并为用户提供个性化服务提供支持。',
+                    'FAST4WARD赛事入驻Bw2w平台，将带来大量初始用户，随着直播、竞猜、社交功能同步展开，结合体育周边商城的发展，用户粘性也逐渐增强。随着平台后期接入更多的体育赛事和项目，更多的用户入驻平台，在粉丝效应、网红经济的发展模式下，平台未来十分可期。',
+                    'FAST4WARD是中国汽车摩托车运动联合会一级赛事，也是国内唯一的直线竞速合法锦标赛事，拥有超过70万高净值粉丝，平均单场赛事新媒体曝光量达到2000万以上，基于赛事的直播资源十分丰富。',
+                    'Ulord 是一条点对点的价值传递公链（http://ulord.one/），通过搭建区块链底层架构和数字资源分发协议，支持第三方开发商在其开源协议之上构建自己的应用程序，与众多行业合作伙伴一起形成区块链技术与应用的完整生态。基于 Ulord 创建的各种规则和协议，嫁接包括文字、图片、音乐、视频、软件等在内的各类数字资源应用场景，为信息创造者与消费者提供直接的对接平台。'
+                ]
+            },
+        ];
+
+        var url = window.location.search;
+
+        var id = url.replace(/.*\=/g,'');
+
+        console.log(id);
+
+        news[id].content.forEach(function (val,index) {
+            $('.news-content').append('<p>'+val+'</p>')
+        })
+    }
+
+
+
+</script>
+</body>
+</html>

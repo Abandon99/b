@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bw2w</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index_1.2.1.css">
+    <link rel="stylesheet" href="css/index_pc_1.2.1.css">
+
+    <style>
+        .course-box.none{
+            width: 1211px;
+        }
+        .percent{
+            height: 495px;!important;
+        }
+
+        .detail-bx.top-course:nth-child(1){
+            position: relative;
+            top: 140px;
+        }
+        .detail-bx.top-course:nth-child(5){
+            position: relative;
+            top: 0px;
+        }
+        .detail-bx.top-course:nth-child(6){
+            position: relative;
+            top: 27px;
+        }
+        .bottom-course .detail-bx:nth-child(4){
+            position: relative;
+            top:-56px;
+        }
+        .bottom-course .detail-bx:nth-child(6){
+            position: relative;
+            top:-84px;
+        }
+        .bottom-course .detail-bx:nth-child(7){
+            position: relative;
+            top:-112px;
+        }
+        .bottom-course .detail-bx:nth-child(8){
+            position: relative;
+            top:-140px;
+        }
+        .detail-bx{
+            height: 292px;
+            /*padding-bottom: -139px;*/
+        }
+        .bottom-course .detail-bx{
+            top:-83px;
+            position: relative;
+        }
+        /*.detail-bx.top-course:nth-child(2){*/
+            /*padding-bottom: -139px;*/
+            /*height: 292px;*/
+        /*}*/
+        .detail-bx.top-course:nth-child(3){
+            /*padding-bottom: -139px;*/
+            /*height: 292px;*/
+        }
+        .calendar-detail{
+            word-break: break-word;
+        }
+        .calendar-detail:hover{
+            font-size: 19px;
+        }
+        .course{
+            /*padding-top: 165px;*/
+            /*padding-bottom: 360px;*/
+            margin: 0px;
+            padding: 0;
+            height: 1000px;
+        }
+        .main-flow{
+            margin-bottom: 0;
+        }
+        .flag{
+            position: relative;
+            top: 30px;
+            left: -13px;
+        }
+        #course .main-title{
+            margin-top: 150px;
+        }
+        .course-detail{
+            margin-top: 50px;
+        }
+        /*.main-title{*/
+            /*margin-top: 0;*/
+        /*}*/
+    </style>
+    <style>
+        @media  (max-width: 1200px) {
+            .course-box:nth-child(1) .arrow{
+                top: -26px;
+                left: 19%;
+            }
+            .course-box{
+                position: relative;
+
+            }
+            .arrow1{
+                width: 104px;
+                position: absolute;
+                top: -24px;
+                right: 19%;
+                font-size: 12px;
+            }
+            .arrow1 img{
+                position: relative;
+                top: 5px;
+            }
+            .hastwo{
+                position: relative;
+                top: 40px;
+            }
+            #course.course{
+                padding-top: 30px;
+                height: 1356px;
+
+            }
+            #course .main-title{
+                margin-top: 0;
+            }
+            .percent{
+                /*height: 0;*/
+                height: auto;
+            }
+            .tips_bottom{
+                display: none;
+                padding-left: 10px;
+                position: absolute;
+                bottom: -124px;
+                right: 8%;
+                font-size: 9px;
+                color: #e3e3e3;
+                letter-spacing: 2px;
+                font-weight: 200;
+            }
+            .main-flow{
+                height:700px;
+                word-break: break-word;
+            }
+            .text-title{
+                background-position-y: 0;
+            }
+            footer{
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    </style>
+
+    <script src="index_1.2.1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="nav-bwtitle">
+            <img src="img/token.png" alt="">
+
+        </div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <img class="img-menu" src= "img/nav-icon@2x.png" alt="">
+                <span class="sr-only">切换导航</span>
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a>Background</a></li>
+                <li><a>Operation</a></li>
+                <li><a>Development</a></li>
+                <li><a>Token</a></li>
+                <li><a>Racecoin</a></li>
+                <li><a>News</a></li>
+                <li><a>切换中文</a></li>
+                <!--<li><a>联系方式</a></li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="main">
+
+        <!--<img class="img2" src="img/yuan.png" alt="">-->
+
+        <div class="title">
+            <div class="title-detail pingfang"><img class="logo-title" src="img/logo.png" alt=""></div>
+        </div>
+
+        <div class="header-box">
+            <header class="">
+                <div class="animated bounceInRight"><img class="logo" src="img/logo.png" alt=""></div>
+                <div class="animated bounceInLeft">Ecological Sports Community In Blockchain</div>
+                <br>
+                <div id="down" class="animated bounceInRight">Download English Whitepaper</div>
+                <img id="img1" class="img1" src="img/double.png" alt="">
+            </header>
+        </div>
+
+        <div class="notice">
+            <img class="img2" src="img/yuan.png" alt="">
+            B&nbspE &nbsp&nbsp  W&nbspI&nbspN &nbsp&nbsp T&nbspO &nbsp&nbsp W&nbspI&nbspN
+        </div>
+
+        <div>
+            <div  id="background" class="text-box">
+                <div class="text-title">Background</div>
+                <div class="line2"></div>
+                <div class="border-bottom"></div>
+                <div class="text-detail text-detail1">
+                    Sports industry, being promising, healthy and green, has internationally-recognised become the
+                    most dynamic industry in the 21st century. It is well-accepted by the population, closely relates to many
+                    other industries and considerably drives consumer demand. It is estimated that the total market size of
+                    the global sports industry shall exceed US$1.6 trillion in 2017, with an average annual growth rate
+                    remaining at as high as 21%. Along with the development of internet technology and continuous
+                    enhancement of customer demand, people are showing the growing interest in sports especially
+                    internet sports. All these have promoted the rapid growth and high integration of sports social
+                    platforms. The‘Content + E-Commerce + Social Platform’model has become a trend.
+                </div>
+                <div class="text-tail">INDUSTRY BACKGROUND</div>
+            </div>
+            <div id="solve" class="text-box">
+                <div class="text-title">Operation</div>
+                <div class="line2"></div>
+                <div class="border-bottom"></div>
+                <div class="text-detail text-detail2">
+                    Under the traditional mode, pain points arise in the process of sports industry integration and fusion: the multilink high cost problem of centralization, the platform operation problem and the information and trade hidden danger. BW2B utilizes the mature blockchain technology, integrated with cloud computing. Cutting edge technologies like big data, artificial intelligence and Internet of Things propose a complete solution towards pain points in sports industry.
+                </div>
+                <div class="text-tail">SOLUTION</div>
+            </div>
+        </div>
+
+        <div id="sports" class="main-box">
+            <div  class="main-title"><img src="img/yuansu@2x.png" alt="">Ecological Sports</div>
+
+            <div class="line"></div>
+            <div class="main-flow">
+                <div><img src="img/arrow.png" alt="">Platform</div>
+                <div><img src="img/arrow.png" alt=""><span>1.Social</span> <span>2.Betting</span> <span>3.Broadcasting</span> <span>4.E-Commerce</span></div>
+
+
+                <!--%%%-->
+                <div class="percent">
+                    <img src="img/yuansu2@2x.png" alt="">
+                    <div class="row_1">
+                        <div class="content1">content</div>
+                        <div class="content1">core</div>
+                        <div class="content1">plan</div>
+                        <div class="content1">technology</div>
+                    </div>
+                    <div class="row_2">
+                        <div>
+                            <img src="img/arrow.png" alt="">
+                            <div>
+                                <div></div>
+                                <div>Macro Sports:starting with the car racing extended to
+                                    football, horse racing, wrestling and other folk events</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Event self-organization:platform users can organize
+                                    events and betting
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Ecosystem:Constructing Decentralised Sports Ecosystem
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div>
+                            <img src="img/arrow.png" alt="">
+                            <div>
+                                <div></div>
+                                <div>Betting</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>News</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Q&A</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Video</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Articles</div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/arrow.png" alt="">
+                            <div>
+                                <div></div>
+                                <div>Folk events</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Color platform content</div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/arrow.png" alt="">
+                            <div>
+                                <div></div>
+                                <div>Cloud computing</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Blockchain</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>AI</div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Internet of things
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                                <div>Big data
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="course" class="course">
+                <div class="main-title"><img src="img/yuansu@2x.png" alt="">Development</div>
+                <div class="line-title"></div>
+                <div class="course-detail">
+                    <div class="course-box">
+                        <div class="arrow1">
+                            <img class="" src="img/arrow_dowm.png" alt="">
+                           Development
+                        </div>
+                        <div class="arrow">
+                            Advertisement
+                            <img class="" src="img/arrow_dowm.png" alt="">
+                        </div>
+                        <div class="tips_bottom">
+                            The schedule could be revised, and investors
+                            will not be informed publicly.
+                        </div>
+                        <div class="hastwo">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    The project launched the first issuance of tokens;mainstream media meeting
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right sss">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Project official on-line,global developers crowdsourcing innovation ideas collection
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo onlyleft">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <!--<div class="calendar-detail"></div>-->
+                                <div class="calendar-detail">
+                                    Global sports community representatives nomination
+
+                                    <!--Tokens enter many mainstream exchanges-->
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Tokens enter many mainstream exchanges
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w beta version launch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo onlyleft">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Road Show 1-Europe and the United States
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Road Show 2-Europe and the East Asia
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w Official Version Launch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Gloabal Road show 3-Southeast Asia
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w launched the first prototype product
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo onlyleft">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Stars and Fans Meting
+                                </div>
+                            </div>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hastwo">
+                            <div class="calendar-box cal-left">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Prize Activity
+                                </div>
+                            </div> <a name="token-name"></a>
+                            <div class="calendar-box cal-right">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w Coin System Launch
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-box none">
+                        <div class="arrow animated">
+                            <img class="" src="img/icon_cla.png" alt="">
+                            Advertisement
+                        </div>
+                        <div class="flag animated">
+                            <img class="" src="img/icon_cla_1.png" alt="">
+                            project Development
+                        </div>
+                        <div class="tips_bottom">
+                            The schedule could be revised, and investors
+                            will not be informed publicly.
+                        </div>
+                        <div class="top-course">
+                            <div class="detail-bx top-course">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Project official on-line,global developers crowdsourcing innovation ideas collection
+                                </div>
+                            </div>
+                            <div class="detail-bx top-course _hide">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+
+                                </div>
+                            </div>
+                            <div class="detail-bx top-course">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w beta version launch
+                                </div>
+                            </div>
+                            <div class="detail-bx top-course _hide">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+
+                                </div>
+                            </div>
+                            <div class="detail-bx top-course">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w Official Version Launch
+                                </div>
+                            </div>
+                            <div class="detail-bx top-course">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w launched the first prototype product
+                                </div>
+                            </div>
+                            <div class="detail-bx top-course _hide">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail"></div>
+                            </div>
+                            <div class="detail-bx top-course">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Bw2w Coin System Launch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-course">
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    The project launched the first issuance of tokens;mainstream media meeting
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global sports community representatives nomination
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Tokens enter many mainstream exchanges
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Road Show 1-Europe and the United States
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Road Show 2-Europe and the East Asia
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Gloabal Road show 3-Southeast Asia
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Stars and Fans Meting
+                                </div>
+                            </div>
+                            <div class="detail-bx">
+                                <div class="calendar">2017.2</div>
+                                <div class="calendar-bt-line"></div>
+                                <div class="calendar-detail">
+                                    Global Prize Activity
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="token" class="main-box">
+                <div class="main-title"><img src="img/yuansu@2x.png" alt="">Token</div>
+                <div class="line"></div>
+                <div class="token-introduce">
+                    The token issued by Bw2w is Racecoin (referred to as RC), and the issuance of RC conforms to the ERC20
+                    standard and is the only basic token in the Bw2w ecosystem. The total amount of RC plans to issue a total of
+                    1 billion, the distribution plan is as follows:
+                </div>
+                <div>
+                    <div class="ploy-box">
+                        <div class="ploy">
+                            <div>15%</div>
+                            <div>PE</div>
+                        </div>
+                        <div class="ploy">
+                            <div>15%</div>
+                            <div>Platform</div>
+                        </div>
+                    </div>
+                    <div class="ploy-box">
+                        <div class="ploy">
+                            <div>20%</div>
+                            <div>Operation</div>
+                        </div><a name="Racecoin-name"></a>
+                        <div class="ploy">
+                            <div>35%</div>
+                            <div>Foundation</div>
+                        </div>
+                    </div>
+                    <div class="ploy-box">
+                        <div class="ploy">
+                            <div>15%</div>
+                            <div>Committee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="racecoin" class="main-box">
+                <div  class="main-title"><img src="img/yuansu@2x.png" alt="">Racecoin</div>
+                <div class="line"></div>
+                <table id="table2" border="1">
+                    <tr>
+                        <td>Percent</td>
+                        <td>Quantity
+</td>
+                        <td>Purpose</td>
+                        <td>Explanation</td>
+                    </tr>
+                    <tr>
+                        <td>15%</td>
+                        <td>150million</td>
+                        <td>PE</td>
+                        <td>For long-term development of the Bw2w ecosystem. The raised digital
+currency will be used for the development and pre-operation of the Bw2wecosystem.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15%</td>
+                        <td>200million</td>
+                        <td>Platform</td>
+                        <td>Locked parts that can not be traded during lockout. Mainly used for the
+construction and maintenance of Bw2w ecosystem.</td>
+                    </tr>
+                    <tr>
+                        <td>20%</td>
+                        <td>150million</td>
+                        <td>Operation</td>
+                        <td>Such as user registration, platform premium content rewards, participation
+rewards. The platform shall distribute these to platform users from time to
+time, and can be traded after being distributed
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>35%</td>
+                        <td>350million</td>
+                        <td>Foundation</td>
+                        <td>In order to maintain the rapid prototyping and subsequent sustainable
+                            development of the entire ecosystem of Bw2w, the foundation reserves part
+                            as an investment and operation fund, which is mainly used for marketing,
+                            token mobility, incentive mechanism, business expansion and lawful
+                            compliance, etc. to build the Bw2w ecosystem .</td>
+                    </tr>
+                    <tr>
+                        <td>15%</td>
+                        <td>150million</td>
+                        <td>Committee</td>
+                        <td>It is assigned to the founding team and consultant team who continuously
+devote manpower, material resources and intelligence, and make efforts and
+contributions in the process of project development, design, resource
+establishment and business environment incubation.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tips">
+                <div class="tip-detail">
+                    The Bw2w fundraising accepts only BTC tokens. The following prices are based on the BTC.
+                </div>
+            </div>
+
+            <div class="price">
+                <div class="price-detail">
+                    <p class="pri1">Round 1- Issue 90 million Tokens to seed investors（9%）
+</p>
+                    <p class="pri2">Issuance price：1BTC=180,000rc</p>
+                </div>
+                <div class="price-detail">
+                    <p class="pri1">Round 2 - Issue 60 million Tokens to PE investors（6%）</p>
+                    <p class="pri2">Issuance price：1BTC=120,000rc</p>
+                </div>
+            </div>
+
+            <div class="for_mobile">
+                <div id="plan_for_mobile" class="main-title "><img src="img/yuansu@2x.png" alt="">RC币PERate计划</div>
+                <div class="line"></div>
+                <table id="table-plan_for_mobile">
+
+                    <tr>
+                        <td>Total tokens</td>
+                        <td>1，000,000,000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Round</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Rate
+                            <br>
+                            
+                        </td>
+                        <td>9%</td>
+                        <td>6%</td>
+                    </tr>
+                    <tr>
+                        <td>Investor
+                        </td>
+                        <td>seed</td>
+                        <td>PE</td>
+                    </tr>
+                    <tr>
+                        <td>Quandity
+                            <br>
+                            of BTC
+
+                        </td>
+                        <td>90,000,000</td>
+                        <td>60,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Price
+                            (BTC/RC)
+                        </td>
+                        <td>180,000</td>
+                        <td>120，000</td>
+                    </tr>
+                    <tr>
+                        <td>Quantity
+                            <br>
+                            of BTC
+
+                        </td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Current 
+                            <br>
+                            value(USD)
+                        </td>
+                        <td>5，000,000</td>
+                        <td>5,000,000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="for_pc">
+                <div id="plan" class="main-title "><img src="img/yuansu@2x.png" alt="">Racecoin distribution plan</div>
+                <div class="line"></div>
+                <table id="table-plan">
+                    <tr>
+                        <td>Total tokens</td>
+                        <td>Round</td>
+                        <td>Rate
+                            <br>
+                            
+                        </td>
+                        <td>Investor</td>
+                        <td>
+                            Quantity of
+                            <br>
+                            token
+                        </td>
+                        <td>
+                            Price
+                            <br>
+                            (BTC/RC)
+                        </td>
+                        <td>Quantity
+                            <br>
+                            of BTC
+                        </td>
+                        <td>Current 
+                            <br>
+                            value(usd)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1，000，000，000</td>
+                        <td>1</td>
+                        <td>9%</td>
+                        <td>seed</td>
+                        <td>90，000，000</td>
+                        <td>180，000</td>
+                        <td>500</td>
+                        <td>5，000，000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>2</td>
+                        <td>6%</td>
+                        <td>PE</td>
+                        <td>60，000，000</td>
+                        <td>120，000</td>
+                        <td>500</td>
+                        <td>5，000，000</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div id="video" class="main-title"><img src="img/yuansu@2x.png" alt="">Videos</div>
+            <div class="line"></div>
+            <div class="video">
+                <p>Coming Soon</p>
+                <video controls>
+                    <source src="#" type="video/mp4">
+                    您的浏览器不支持 HTML5 video 标签。
+                    your explore can't run < video >
+                </video>
+
+            </div>
+
+            <div id="news" class="main-title"><img src="img/yuansu@2x.png" alt="">News</div>
+            <div class="line"></div>
+            <div class="news">
+
+                <div class="news-box">
+                    <!--<div class="news-detail">-->
+                        <!--<div class="news-content"><img class="little-style" src="img/多边形4拷贝20@2x.png" alt=""></div>-->
+                        <!--<div class="news-date"></div>-->
+                    <!--</div>-->
+                    <!--<div class="news-detail"></div>-->
+                    <!--<div class="news-detail"></div>-->
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <footer id="flow">
+            <div class="foot-top">
+                <div>Home</div>
+                <div>Whitepaper</div>
+                <div>Bw2w Community(Coming Soon)</div>
+            </div>
+            <div class="foot-bottom">
+                <div>©2017-2018</div>
+                <div>contact：<a style="color: #c3c3c3;text-decoration:underline" href="mailto:support@bwin2win.com">support@bwin2win.com</a></div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script>
+        ///图片转
+
+        var windowWidth = window.screen.width;
+
+
+        if (windowWidth > 1200){
+            $("#img1").css({
+                transform:'none'
+            })
+        }else {
+            var ele ;
+
+            //自定义函数
+            $.fn.extend({
+                rotate: function () {
+                    ele = this ;
+                    setInterval('singleRotate()',10);
+                }
+            });
+
+            //初始角度
+            var degree = 0;
+
+            $('#img1').rotate();
+        }
+
+
+
+        //单次旋转
+        function singleRotate() {
+            //一次增加50度
+            degree = degree + 50 * Math.PI / 180;
+            ele.css("transform","rotate3d("+"1,1,0,"+degree+"deg)");
+        }
+    </script>
+</body>
+</html>
